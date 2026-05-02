@@ -1,0 +1,7 @@
+@echo off
+cd /d "C:\No Flop Studio\backend"
+echo Activation de l'environnement virtuel...
+call venv\Scripts\activate
+echo Lancement du serveur...
+python -m uvicorn main:app --reload --port 8000
+pause
